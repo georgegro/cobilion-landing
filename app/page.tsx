@@ -346,7 +346,7 @@ export default function Page() {
           <p className="text-[18px] font-extrabold text-[#2A2A2A]">Cobilion</p>
           <p className="text-[13px] text-[#222] mt-1">Do a task. Sell it to the robots.</p>
         </div>
-        <p className="text-[14px] text-[#2A2A2A]">george@mintventures.xyz</p>
+        <a href="mailto:hello@mintventures.xyz" className="text-[14px] text-[#2A2A2A] no-underline hover:text-[#4ADE80] transition-colors">hello@mintventures.xyz</a>
       </footer>
 
     </div>
