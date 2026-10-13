@@ -136,11 +136,16 @@ export default function Page() {
             </div>
           </div>
 
-          <img
-            src="/hero-hands.jpg"
-            alt="First-person view of a worker’s hands assembling a part"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
             className="w-full lg:w-[440px] aspect-[4/3] lg:aspect-[3/4] rounded-[14px] object-cover shrink-0"
-          />
+            aria-label="First-person view of a worker’s hands assembling a part"
+          >
+            <source src="/hero-hands.webm" type="video/webm" />
+          </video>
         </div>
 
         <div>
