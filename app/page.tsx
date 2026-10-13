@@ -156,7 +156,8 @@ export default function Page() {
             {[
               { n: 'Factories', l: 'Assembly, machining, packing, quality control', c: '#4ADE80' },
               { n: 'Facilities', l: 'Warehouses, logistics, maintenance', c: '#FB923C' },
-              { n: 'Production floors', l: 'Workshops, kitchens, light production', c: '#F0EDE8' },
+              { n: 'Workshops', l: 'Kitchens, repair, light production', c: '#F0EDE8' },
+              { n: 'Construction sites', l: 'Installation, fit-out, finishing trades', c: '#4ADE80' },
             ].map((s, i) => (
               <div
                 key={i}
