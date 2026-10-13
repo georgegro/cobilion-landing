@@ -32,7 +32,7 @@ function WaitlistForm({ id, btnLabel }: { id: string; btnLabel: string }) {
   if (status === 'ok') {
     return (
       <p className="text-[#4ADE80] text-base pt-1">
-        ✓ You&apos;re on the list. We&apos;ll be in touch.
+        ✓ Thanks. We&apos;ll be in touch.
       </p>
     )
   }
@@ -99,7 +99,7 @@ export default function Page() {
             transition-colors no-underline
           "
         >
-          Get Early Access
+          Talk to us
         </a>
       </nav>
 
@@ -114,21 +114,21 @@ export default function Page() {
           tracking-[-0.03em] text-[#F0EDE8]
           max-w-[920px] text-balance
         ">
-          Co-create with{' '}
-          <em className="not-italic text-[#4ADE80]">1 billion robots.</em>
+          Monetise your{' '}
+          <em className="not-italic text-[#4ADE80]">facility data.</em>
         </h1>
 
         <p className="
           text-[clamp(18px,2.2vw,24px)] font-light text-[#555]
-          max-w-[600px] leading-relaxed
+          max-w-[640px] leading-relaxed
         ">
-          Cobilion is the marketplace where humans record physical tasks and get paid —
-          and robotics companies buy the demonstrations to train their AI.
+          Cobilion helps factories and facilities sell worker and site data to frontier
+          robotics labs — anonymised, encrypted, and ready to license.
         </p>
 
         <div id="join" className="max-w-[480px]">
-          <WaitlistForm id="hero-form" btnLabel="Join waitlist" />
-          <p className="text-[13px] text-[#333] mt-2.5">Be first to earn from your movements.</p>
+          <WaitlistForm id="hero-form" btnLabel="Talk to us" />
+          <p className="text-[13px] text-[#333] mt-2.5">For facility and factory operators.</p>
         </div>
 
         <div className="flex flex-wrap gap-0 mt-2">
@@ -161,34 +161,34 @@ export default function Page() {
           What is Cobilion
         </p>
         <h2 className="text-[clamp(36px,4.5vw,60px)] font-extrabold leading-none tracking-[-0.025em] max-w-[760px] mb-6 text-balance">
-          The marketplace for robot training data.
+          From the facility floor to frontier labs.
         </h2>
-        <p className="text-[20px] font-light text-[#555] max-w-[640px] leading-relaxed mb-14">
-          Robots learn by watching humans. Today, labs pay full-time employees to perform tasks
-          in controlled environments — expensive, slow, and limited. Cobilion opens that market
-          to anyone with a phone.
+        <p className="text-[20px] font-light text-[#555] max-w-[680px] leading-relaxed mb-14">
+          Your site already produces the physical work robotics labs buy. Cobilion is how
+          operators package it: anonymise and encrypt what must stay private, score and
+          label what labs need, and support the recording so the dataset can leave the building.
         </p>
 
         {/* Flow */}
         <div className="flex items-stretch">
           <div className="flex-1 bg-[#111] text-[#F0EDE8] p-10 rounded-[14px] flex flex-col gap-3">
-            <h3 className="text-[20px] font-bold">Contributors</h3>
+            <h3 className="text-[20px] font-bold">Facility operators</h3>
             <p className="text-[16px] opacity-55 leading-relaxed">
-              Anyone records everyday physical tasks using a phone or wearable — at home, at work, anywhere.
+              Ground-floor teams capture real production work — hands making things, from the worker&apos;s point of view — and open a revenue stream from data the site already generates.
             </p>
           </div>
           <div className="flex items-center px-5 text-[28px] text-[#4ADE80]">→</div>
           <div className="flex-1 bg-[#4ADE80] text-[#111] p-10 rounded-[14px] flex flex-col gap-3">
             <h3 className="text-[20px] font-bold">Cobilion</h3>
             <p className="text-[16px] opacity-75 leading-relaxed">
-              Curation, quality scoring, labeling, and marketplace layer.
+              Anonymise and encrypt faces, documents, floor plans, and proprietary labels. Quality and labelling. Support on data recording.
             </p>
           </div>
           <div className="flex items-center px-5 text-[28px] text-[#4ADE80]">→</div>
           <div className="flex-1 bg-[#111] text-[#F0EDE8] p-10 rounded-[14px] flex flex-col gap-3">
-            <h3 className="text-[20px] font-bold">Robotics Labs</h3>
+            <h3 className="text-[20px] font-bold">Robotics labs</h3>
             <p className="text-[16px] opacity-55 leading-relaxed">
-              Browse, filter, and license demonstrations by task type, environment, and diversity — at scale.
+              License production demonstrations from working facilities — by task, environment, and quality — at the volume training requires.
             </p>
           </div>
         </div>
@@ -200,30 +200,30 @@ export default function Page() {
           How it works
         </p>
         <h2 className="text-[clamp(36px,4.5vw,60px)] font-extrabold leading-none tracking-[-0.025em] mb-16">
-          Simple on both sides.
+          How the data moves.
         </h2>
 
         <div className="grid grid-cols-[1fr_1px_1fr]">
-          {/* Contributors */}
+          {/* Facility operators */}
           <div className="flex flex-col gap-10 pr-12">
             <p className="text-[12px] font-bold tracking-[0.1em] uppercase text-[#4ADE80]">
-              For Contributors
+              For facility operators
             </p>
             {[
               {
                 n: '1',
-                h: 'Record a task',
-                p: 'Use your phone or a clip-on camera to film everyday things — folding laundry, opening a box, cooking.',
+                h: 'Record the work',
+                p: 'On-site support for data recording. Cameras stay on the task — hands, tools, and the line — from the worker’s point of view.',
               },
               {
                 n: '2',
-                h: 'Upload to Cobilion',
-                p: 'Our platform reviews, labels, and prices your demonstrations automatically. No technical knowledge needed.',
+                h: 'Anonymise and encrypt',
+                p: 'Faces, documents, floor plans, and proprietary labels are removed or encrypted before anything is offered for sale.',
               },
               {
                 n: '3',
-                h: 'Get paid',
-                p: 'Earn every time a robotics lab licenses your data. You keep 75% of every sale.',
+                h: 'Open a revenue stream',
+                p: 'Quality-scored, labelled data is licensed to frontier robotics labs. Operators keep 75% of every sale.',
               },
             ].map((s) => (
               <div key={s.n} className="flex gap-5 items-start">
@@ -248,18 +248,18 @@ export default function Page() {
             {[
               {
                 n: '1',
-                h: 'Define what you need',
-                p: 'Search by task type, environment, body type — or send custom requests directly to the contributor pool.',
+                h: 'Define the task',
+                p: 'Specify the work, the environment, and the volume. The supply is facilities that already do the job.',
               },
               {
                 n: '2',
-                h: 'License at scale',
-                p: 'Browse a curated, quality-scored catalogue. Subscribe for unlimited access or buy individual datasets.',
+                h: 'License clean data',
+                p: 'Every dataset is anonymised, quality-scored, and labelled before it reaches you.',
               },
               {
                 n: '3',
-                h: 'Train faster',
-                p: 'Diverse, real-world demonstrations that cut training time and improve generalization across environments.',
+                h: 'Train on real facilities',
+                p: 'Production-floor demonstrations from working sites, instead of a single lab studio.',
               },
             ].map((s) => (
               <div key={s.n} className="flex gap-5 items-start">
@@ -284,26 +284,26 @@ export default function Page() {
         <h2 className="text-[clamp(36px,4.5vw,60px)] font-extrabold leading-none tracking-[-0.025em] max-w-[680px] mb-4 text-balance">
           The market is already proving this.
         </h2>
-        <p className="text-[20px] font-light text-[#555] max-w-[560px] leading-relaxed mb-14">
-          Physical world training data is the next crowdsourced data business — and no open
-          marketplace exists yet.
+        <p className="text-[20px] font-light text-[#555] max-w-[600px] leading-relaxed mb-14">
+          Physical-world training data is scarce, and facilities that already do the work
+          are the supply. No open path exists yet for them to sell it safely.
         </p>
 
         <div className="flex flex-col gap-3.5">
           {[
             {
               h: 'Scale AI — $14B valuation',
-              p: 'Built a business on crowdsourced data labeling. Cobilion is the same model applied to physical world demonstrations — harder to collect, higher switching costs, larger long-term market.',
+              p: 'Built a business on crowdsourced data labelling. Cobilion is that model for physical work inside real facilities — harder to collect, higher switching costs, larger long-term market.',
               border: '#4ADE80',
             },
             {
               h: 'Physical Intelligence & Shift Robotics',
-              p: 'Well-funded labs are already hiring humans to generate demonstrations — but only for their own robots. No open marketplace exists yet. Cobilion is building it.',
+              p: 'Well-funded labs already pay to generate demonstrations, usually for their own robots. They need more of it, from real production floors. Facilities can sell that data. The platform to do it safely does not exist yet.',
               border: '#FB923C',
             },
             {
               h: "China's data farms",
-              p: 'Chinese manufacturers are paying workers full-time to perform tasks for robot training at scale. The demand signal is real. The platform does not exist in the West.',
+              p: 'Chinese manufacturers pay workers full-time to perform tasks for robot training at scale. The demand signal is real. Western facilities can supply the same class of data — once it is anonymised and encrypted.',
               border: '#333',
             },
           ].map((c) => (
@@ -319,26 +319,25 @@ export default function Page() {
         </div>
 
         <div className="bg-[#EEECEA] border border-[#E2E0DA] rounded-[12px] px-9 py-7 mt-12 text-[18px] text-[#555] leading-relaxed max-w-[820px]">
-          <b className="text-[#111]">The business model:</b> 25% take rate on every demonstration
-          sold — contributors keep 75%. Lab subscriptions for high-volume buyers. Exclusive rights
-          tiers for labs that need proprietary training data.
+          <b className="text-[#111]">The business model:</b> 25% take rate on every dataset
+          sold — facility operators keep 75%. Lab subscriptions for high-volume buyers. Exclusive
+          tiers for labs that need data kept off the open market.
         </div>
       </section>
 
       {/* FINAL CTA */}
       <section className="bg-[#0D0D0D] px-16 py-28 flex flex-col gap-10">
         <h2 className="text-[clamp(44px,5.5vw,80px)] font-extrabold leading-none tracking-[-0.03em] max-w-[900px] text-balance">
-          Every robot on the planet<br />
-          needs to learn from{' '}
-          <em className="not-italic text-[#4ADE80]">humans first.</em>
+          The work is already on your floor.<br />
+          <em className="not-italic text-[#4ADE80]">Sell the data.</em>
         </h2>
-        <p className="text-[20px] font-light text-[#555] max-w-[500px] leading-relaxed">
-          We&apos;re building the platform that makes that possible at scale. Get early access — as
-          a contributor, a lab, or an investor.
+        <p className="text-[20px] font-light text-[#555] max-w-[540px] leading-relaxed">
+          Talk to us about recording, anonymising, and licensing facility data to frontier
+          robotics labs.
         </p>
         <div className="max-w-[480px]">
-          <WaitlistForm id="cta-form" btnLabel="Get early access" />
-          <p className="text-[13px] text-[#333] mt-2.5">For contributors, labs, and investors.</p>
+          <WaitlistForm id="cta-form" btnLabel="Talk to us" />
+          <p className="text-[13px] text-[#333] mt-2.5">Facility and factory operators. Labs welcome as buyers.</p>
         </div>
       </section>
 
@@ -346,7 +345,7 @@ export default function Page() {
       <footer className="bg-[#080808] px-16 py-9 flex justify-between items-center border-t border-[#141414]">
         <div>
           <p className="text-[18px] font-extrabold text-[#2A2A2A]">Cobilion</p>
-          <p className="text-[13px] text-[#222] mt-1">Do a task. Sell it to the robots.</p>
+          <p className="text-[13px] text-[#222] mt-1">Monetise your facility data.</p>
         </div>
         <a href="mailto:hello@mintventures.xyz" className="text-[14px] text-[#2A2A2A] no-underline hover:text-[#4ADE80] transition-colors">hello@mintventures.xyz</a>
       </footer>
