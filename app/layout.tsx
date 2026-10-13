@@ -10,20 +10,22 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Cobilion — Monetise your factory floor data.',
+  title: 'Cobilion — Monetise your shop-floor data',
   description:
-    'Extra revenue per site for manufacturers. Zero line disruption. Anonymisation and encryption handled. Frontier robotics labs buy the data.',
+    'Robotics labs pay for first-person video of skilled work. Cobilion helps factories and facilities sell it: anonymised, encrypted and labelled.',
   openGraph: {
-    title: 'Cobilion',
-    description: 'Monetise your factory floor data.',
+    title: 'Cobilion — Monetise your shop-floor data',
+    description:
+      'Robotics labs pay for first-person video of skilled work. Cobilion helps factories and facilities sell it: anonymised, encrypted and labelled.',
     url: 'https://cobilion.com',
     siteName: 'Cobilion',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Cobilion — Monetise your factory floor data.',
-    description: 'Extra revenue per site. Zero line disruption. Anonymisation and encryption handled.',
+    title: 'Cobilion — Monetise your shop-floor data',
+    description:
+      'Robotics labs pay for first-person video of skilled work. Cobilion helps factories and facilities sell it: anonymised, encrypted and labelled.',
   },
 }
 

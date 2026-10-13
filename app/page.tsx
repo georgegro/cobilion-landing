@@ -109,87 +109,101 @@ export default function Page() {
         min-h-screen flex flex-col justify-center
         px-16 pt-40 pb-24 gap-10
       ">
-        <h1 className="
-          text-[clamp(52px,6.5vw,92px)] font-extrabold leading-[0.95]
-          tracking-[-0.03em] text-[#F0EDE8]
-          max-w-[920px] text-balance
-        ">
-          Monetise your{' '}
-          <em className="not-italic text-[#4ADE80]">factory floor data.</em>
-        </h1>
+        <div className="flex flex-col lg:flex-row lg:items-center gap-10">
+          <div className="flex flex-col gap-10 flex-1 min-w-0">
+            <p className="text-[12px] font-bold tracking-[0.1em] uppercase text-[#4ADE80]">
+              For factories and facilities
+            </p>
+            <h1 className="
+              text-[clamp(52px,6.5vw,92px)] font-extrabold leading-[0.95]
+              tracking-[-0.03em] text-[#F0EDE8]
+              max-w-[920px] text-balance
+            ">
+              Your shop floor is{' '}
+              <em className="not-italic text-[#4ADE80]">training data.</em>
+            </h1>
 
-        <p className="
-          text-[clamp(18px,2.2vw,24px)] font-light text-[#555]
-          max-w-[640px] leading-relaxed
-        ">
-          Extra revenue per site, from the work already on your line. Zero disruption
-          to production. Anonymisation and encryption are handled. Frontier robotics
-          labs are the buyers.
-        </p>
+            <p className="
+              text-[clamp(18px,2.2vw,24px)] font-light text-[#555]
+              max-w-[640px] leading-relaxed
+            ">
+              Frontier robotics labs pay for first-person video of skilled hands at work. Cobilion helps you sell it as a new revenue stream, safely and without disrupting production.
+            </p>
 
-        <div id="join" className="max-w-[560px]">
-          <WaitlistForm id="hero-form" btnLabel="See what your data is worth" />
-          <p className="text-[13px] text-[#333] mt-2.5">For factory owners, ops leads, and ground-floor operators.</p>
+            <div id="join" className="max-w-[560px]">
+              <WaitlistForm id="hero-form" btnLabel="See what your data is worth" />
+              <p className="text-[13px] text-[#333] mt-2.5">A 15-minute call. No commitment.</p>
+            </div>
+          </div>
+
+          <img
+            src="/hero-hands.jpg"
+            alt="First-person view of a worker’s hands assembling a part"
+            className="w-full lg:w-[440px] aspect-[4/3] lg:aspect-[3/4] rounded-[14px] object-cover shrink-0"
+          />
         </div>
 
-        <div className="flex flex-wrap gap-0 mt-2">
-          {[
-            { n: 'Extra', l: 'revenue per site, from work you already run', c: '#4ADE80' },
-            { n: 'Zero', l: 'disruption to the line', c: '#FB923C' },
-            { n: 'Handled', l: 'anonymisation and encryption before anything is sold', c: '#F0EDE8' },
-          ].map((s, i) => (
-            <div
-              key={i}
-              className={`flex flex-col gap-1 pr-10 ${
-                i > 0 ? 'pl-10 border-l border-[#1E1E1E]' : ''
-              }`}
-            >
-              <span
-                className="text-[38px] font-extrabold leading-none tracking-tight"
-                style={{ color: s.c }}
+        <div>
+          <p className="text-[12px] font-bold tracking-[0.1em] uppercase text-[#4ADE80] mb-5">
+            Who it’s for
+          </p>
+          <div className="flex flex-wrap gap-0">
+            {[
+              { n: 'Factories', l: 'Assembly, machining, packing, quality control', c: '#4ADE80' },
+              { n: 'Facilities', l: 'Warehouses, logistics, maintenance', c: '#FB923C' },
+              { n: 'Production floors', l: 'Workshops, kitchens, light production', c: '#F0EDE8' },
+            ].map((s, i) => (
+              <div
+                key={i}
+                className={`flex flex-col gap-1 pr-10 ${
+                  i > 0 ? 'pl-10 border-l border-[#1E1E1E]' : ''
+                }`}
               >
-                {s.n}
-              </span>
-              <span className="text-[13px] text-[#444] leading-snug max-w-[160px]">{s.l}</span>
-            </div>
-          ))}
+                <span
+                  className="text-[38px] font-extrabold leading-none tracking-tight"
+                  style={{ color: s.c }}
+                >
+                  {s.n}
+                </span>
+                <span className="text-[13px] text-[#444] leading-snug max-w-[160px]">{s.l}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* WHAT */}
       <section className="bg-[#F5F4F0] text-[#111] px-16 py-28">
         <p className="text-[12px] font-bold tracking-[0.1em] uppercase text-[#16A34A] mb-5">
-          What is Cobilion
+          What we do
         </p>
         <h2 className="text-[clamp(36px,4.5vw,60px)] font-extrabold leading-none tracking-[-0.025em] max-w-[760px] mb-6 text-balance">
-          Your floor already makes what the labs buy.
+          Sell your data to frontier robotics labs.
         </h2>
         <p className="text-[20px] font-light text-[#555] max-w-[680px] leading-relaxed mb-14">
-          Cobilion is how manufacturers turn that into a revenue line. Anonymise and
-          encrypt what must stay private, score and label what is useful, and record it
-          without stopping the line. Frontier robotics labs are the buyers.
+          The labs building humanoids and robot arms need recordings of real skilled work, and simulation can’t replace it. Your team already does that work every shift. We turn it into licensed training data and pay you for it.
         </p>
 
         {/* Flow */}
         <div className="flex items-stretch">
           <div className="flex-1 bg-[#111] text-[#F0EDE8] p-10 rounded-[14px] flex flex-col gap-3">
-            <h3 className="text-[20px] font-bold">Manufacturers</h3>
+            <h3 className="text-[20px] font-bold">Anonymised and encrypted</h3>
             <p className="text-[16px] opacity-55 leading-relaxed">
-              Factory owners and ground-floor teams keep making things. Hands on the work, from the worker&apos;s point of view, become extra revenue per site.
+              Faces, documents, floor plans and proprietary labels are removed before anything leaves your site. Encrypted in transit and at rest.
             </p>
           </div>
           <div className="flex items-center px-5 text-[28px] text-[#4ADE80]">→</div>
           <div className="flex-1 bg-[#4ADE80] text-[#111] p-10 rounded-[14px] flex flex-col gap-3">
-            <h3 className="text-[20px] font-bold">Cobilion</h3>
+            <h3 className="text-[20px] font-bold">Quality and labelling</h3>
             <p className="text-[16px] opacity-75 leading-relaxed">
-              Anonymise and encrypt faces, documents, floor plans, and proprietary labels. Quality and labelling. Support on data recording, with zero line disruption.
+              Hand tracking, step-by-step task labels, narration transcripts and human review, delivered in the formats labs train on.
             </p>
           </div>
           <div className="flex items-center px-5 text-[28px] text-[#4ADE80]">→</div>
           <div className="flex-1 bg-[#111] text-[#F0EDE8] p-10 rounded-[14px] flex flex-col gap-3">
-            <h3 className="text-[20px] font-bold">Robotics labs</h3>
+            <h3 className="text-[20px] font-bold">Recording support</h3>
             <p className="text-[16px] opacity-55 leading-relaxed">
-              The buyers. Frontier labs pay for production-floor data from working factories.
+              Cameras, setup and a short training for your team, plus guidance on re-recording when footage falls short.
             </p>
           </div>
         </div>
@@ -201,30 +215,30 @@ export default function Page() {
           How it works
         </p>
         <h2 className="text-[clamp(36px,4.5vw,60px)] font-extrabold leading-none tracking-[-0.025em] mb-16">
-          Built around the line you already run.
+          You keep working. We handle the rest.
         </h2>
 
         <div className="grid grid-cols-[1fr_1px_1fr]">
           {/* Facility operators */}
           <div className="flex flex-col gap-10 pr-12">
             <p className="text-[12px] font-bold tracking-[0.1em] uppercase text-[#4ADE80]">
-              For manufacturers
+              Your side
             </p>
             {[
               {
                 n: '1',
-                h: 'Keep the line running',
-                p: 'Support on data recording. Cameras stay on the task — hands, tools, and the work — from the worker’s point of view. Production does not stop.',
+                h: 'Pick the work',
+                p: 'Choose which tasks and areas can be recorded. You approve the scope.',
               },
               {
                 n: '2',
-                h: 'Anonymise and encrypt',
-                p: 'Faces, documents, floor plans, and proprietary labels are handled before anything is offered for sale.',
+                h: 'Wear the cameras',
+                p: 'Workers record during normal shifts, narrating what they do and why.',
               },
               {
                 n: '3',
-                h: 'Add revenue per site',
-                p: 'Quality-scored, labelled data is sold on. You keep 75% of every sale. Frontier robotics labs are the buyers.',
+                h: 'Get paid',
+                p: 'Revenue for every usable hour, with a bonus for your team.',
               },
             ].map((s) => (
               <div key={s.n} className="flex gap-5 items-start">
@@ -244,23 +258,23 @@ export default function Page() {
           {/* Labs */}
           <div className="flex flex-col gap-10 pl-12">
             <p className="text-[12px] font-bold tracking-[0.1em] uppercase text-[#FB923C]">
-              What you get
+              Our side
             </p>
             {[
               {
                 n: '1',
-                h: 'Extra revenue per site',
-                p: 'A new income line from data the factory already generates, alongside the work you are paid to do today.',
+                h: 'Consent and contracts',
+                p: 'Worker consent, GDPR paperwork and one standard licence agreement.',
               },
               {
                 n: '2',
-                h: 'Zero line disruption',
-                p: 'Recording support is built around the shift. The line keeps running.',
+                h: 'Clean and label',
+                p: 'Anonymise, encrypt, label and quality-check every recording.',
               },
               {
                 n: '3',
-                h: 'Anonymisation handled',
-                p: 'Encryption too. Faces, documents, floor plans, and proprietary labels are part of the product, not a project your team has to staff.',
+                h: 'Sell to labs',
+                p: 'We find the buyers and handle licensing. You approve what’s sold.',
               },
             ].map((s) => (
               <div key={s.n} className="flex gap-5 items-start">
@@ -331,17 +345,15 @@ export default function Page() {
       {/* FINAL CTA */}
       <section className="bg-[#0D0D0D] px-16 py-28 flex flex-col gap-10">
         <h2 className="text-[clamp(44px,5.5vw,80px)] font-extrabold leading-none tracking-[-0.03em] max-w-[900px] text-balance">
-          See what your factory<br />
-          floor data{' '}
-          <em className="not-italic text-[#4ADE80]">is worth.</em>
+          Your team already creates the data.{' '}
+          <em className="not-italic text-[#4ADE80]">Start getting paid for it.</em>
         </h2>
         <p className="text-[20px] font-light text-[#555] max-w-[560px] leading-relaxed">
-          Extra revenue per site. Zero line disruption. Anonymisation and encryption
-          handled. Frontier robotics labs buy the data.
+          Find out what your processes are worth to robotics labs.
         </p>
         <div className="max-w-[560px]">
-          <WaitlistForm id="cta-form" btnLabel="See what your data is worth" />
-          <p className="text-[13px] text-[#333] mt-2.5">For factory owners, ops leads, and ground-floor operators.</p>
+          <WaitlistForm id="cta-form" btnLabel="Book a call" />
+          <p className="text-[13px] text-[#333] mt-2.5">For manufacturers, facility operators and production managers.</p>
         </div>
       </section>
 
