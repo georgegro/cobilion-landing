@@ -364,12 +364,16 @@ export default function Page() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#080808] px-16 py-9 flex justify-between items-center border-t border-[#141414]">
+      <footer className="bg-white px-16 py-9 flex justify-between items-center border-t border-[#E5E5E5]">
         <div>
-          <p className="text-[18px] font-extrabold text-[#2A2A2A]">Cobilion</p>
-          <p className="text-[13px] text-[#222] mt-1">Monetise your factory floor data.</p>
+          <p className="text-[18px] font-extrabold text-black">Cobilion</p>
+          <p className="text-[13px] text-black mt-1">Monetise your factory floor data.</p>
+          <p className="text-[12px] text-black mt-3">© 2026 Cobilion. All rights reserved.</p>
         </div>
-        <a href="mailto:hello@mintventures.xyz" className="text-[14px] text-[#2A2A2A] no-underline hover:text-[#4ADE80] transition-colors">hello@mintventures.xyz</a>
+        <p className="text-[14px] text-black">
+          Incubated by:{' '}
+          <a href="mailto:hello@mintventures.xyz" className="text-black underline-offset-2 hover:underline">hello@mintventures.xyz</a>
+        </p>
       </footer>
 
     </div>
