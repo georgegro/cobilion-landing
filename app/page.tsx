@@ -153,10 +153,12 @@ export default function Page() {
             muted
             loop
             playsInline
+            poster="/hero-hands-poster.jpg"
             className="w-full lg:w-[440px] aspect-[4/3] lg:aspect-[3/4] rounded-[14px] object-cover shrink-0"
             aria-label="First-person view of a worker’s hands assembling a part"
           >
-            <source src="/hero-hands.webm" type="video/webm" />
+            <source src="/hero-hands.webm" type='video/webm; codecs="vp9"' />
+            <source src="/hero-hands.mp4" type="video/mp4" />
           </video>
         </div>
 
