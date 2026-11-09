@@ -389,8 +389,8 @@ export default function Page() {
           <p className="text-[12px] text-black mt-3">© 2026 Cobilion. All rights reserved.</p>
         </div>
         <p className="text-[14px] text-black">
-          Incubated by:{' '}
-          <a href="mailto:hello@mintventures.xyz" className="text-black underline-offset-2 hover:underline">hello@mintventures.xyz</a>
+          Backed by:{' '}
+          <a href="https://mintventures.xyz" className="text-black underline-offset-2 hover:underline">mintventures.xyz</a>
         </p>
       </footer>
 
